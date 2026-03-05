@@ -5,7 +5,7 @@ import {defineConfig, loadEnv} from 'vite';
 
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
-  const base = process.env.VITE_BASE ?? env.VITE_BASE ?? '/';
+  const base = process.env.VITE_BASE ?? env.VITE_BASE ?? '/carpet-cleaning/';
   return {
     base,
     plugins: [react(), tailwindcss()],
