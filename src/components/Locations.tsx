@@ -46,9 +46,9 @@ export default function Locations() {
           <div className="relative aspect-square md:aspect-video lg:aspect-square bg-white rounded-2xl shadow-sm border border-border overflow-hidden">
             {/* Real Map Background */}
             <img
-              src="/img/map.png"
+              src={`${import.meta.env.BASE_URL}img/map.png`}
               alt="Greater Bay Area Map"
-              className="absolute inset-0 w-full h-full object-fit "
+              className="absolute inset-0 w-full h-full object-cover"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-primary/5"></div>
